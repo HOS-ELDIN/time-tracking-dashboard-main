@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Time tracking dashboard</title>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/hos-FW.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<div class="challenge-container">
+				<div class="main-card">
+					<div class="owner">
+						<div class="img-holder">
+							<img src="images/hossam.jpg" alt="owner" />
+						</div>
+						<div class="info">
+							<p>Report for</p>
+							<h2>Hossam Eldin</h2>
+						</div>
+					</div>
+					<div class="time">
+						<span data-time-frame="daily">Daily</span>
+						<span class="active" data-time-frame="weekly">Weekly</span>
+						<span data-time-frame="monthly">Monthly</span>
+					</div>
+				</div>
+				<div class="cards-holder">
+					<!-- work card  -->
+					<div class="card | work">
+						<div class="icon-holder">
+							<img src="images/icon-work.svg" alt="" />
+						</div>
+						<div class="card-category">
+							<div class="up">
+								<h3>Work</h3>
+								<svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+										fill-rule="evenodd"
+									/>
+								</svg>
+							</div>
+							<div class="down">
+								<span class="current"></span>
+								<span>last week - <span class="previous"></span></span>
+							</div>
+						</div>
+					</div>
+
+					<!-- play card  -->
+					<div class="card | play">
+						<div class="icon-holder">
+							<img src="images/icon-play.svg" alt="" />
+						</div>
+						<div class="card-category">
+							<div class="up">
+								<h3>play</h3>
+								<svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+										fill-rule="evenodd"
+									/>
+								</svg>
+							</div>
+							<div class="down">
+								<span class="current"></span>
+								<span>last week - <span class="previous"></span></span>
+							</div>
+						</div>
+					</div>
+					<!-- study card  -->
+					<div class="card | study">
+						<div class="icon-holder">
+							<img src="images/icon-study.svg" alt="" />
+						</div>
+						<div class="card-category">
+							<div class="up">
+								<h3>study</h3>
+								<svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+										fill-rule="evenodd"
+									/>
+								</svg>
+							</div>
+							<div class="down">
+								<span class="current"></span>
+								<span>last week - <span class="previous"></span></span>
+							</div>
+						</div>
+					</div>
+					<!-- exercise card  -->
+					<div class="card | exercise">
+						<div class="icon-holder">
+							<img src="images/icon-exercise.svg" alt="" />
+						</div>
+						<div class="card-category">
+							<div class="up">
+								<h3>exercise</h3>
+								<svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+										fill-rule="evenodd"
+									/>
+								</svg>
+							</div>
+							<div class="down">
+								<span class="current"></span>
+								<span>last week - <span class="previous"></span></span>
+							</div>
+						</div>
+					</div>
+					<!-- social card  -->
+					<div class="card | social">
+						<div class="icon-holder">
+							<img src="images/icon-social.svg" alt="" />
+						</div>
+						<div class="card-category">
+							<div class="up">
+								<h3>social</h3>
+								<svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+										fill-rule="evenodd"
+									/>
+								</svg>
+							</div>
+							<div class="down">
+								<span class="current"></span>
+								<span>last week - <span class="previous"></span></span>
+							</div>
+						</div>
+					</div>
+					<!-- self-care card  -->
+					<div class="card | self-care">
+						<div class="icon-holder">
+							<img src="images/icon-self-care.svg" alt="" />
+						</div>
+						<div class="card-category">
+							<div class="up">
+								<h3>self care</h3>
+								<svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+										fill-rule="evenodd"
+									/>
+								</svg>
+							</div>
+							<div class="down">
+								<span class="current"></span>
+								<span>last week - <span class="previous"></span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="attribution">
+				Challenge by
+				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+					>Frontend Mentor</a
+				>. Coded by
+				<a href="https://twitter.com/Eng_7ossamEldin" target="_blank"
+					>Hossam Eldin</a
+				>.
+			</div>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
