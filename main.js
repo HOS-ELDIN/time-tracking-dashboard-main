@@ -45,3 +45,28 @@ function check(e, timeFrame) {
 		}
 	});
 }
+let node = document.getElementById("my-node");
+
+const createImage = () => {
+	console.log("i am working");
+	const placeholder = document.getElementById("img-placeholder");
+	placeholder.innerHTML = "";
+	htmlToImage
+		.toPng(node, { quality: 1 })
+		.then(function (dataUrl) {
+			var img = new Image();
+			img.src = dataUrl;
+			placeholder.appendChild(img);
+		})
+		.catch(function (error) {
+			console.error("oops, something went wrong!", error);
+		});
+};
+
+const downloadImage = () => {
+	htmlToImage
+		.toPng(document.getElementById("my-node"))
+		.then(function (dataUrl) {
+			download(dataUrl, "my-node.png");
+		});
+};
